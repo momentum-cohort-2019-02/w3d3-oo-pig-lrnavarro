@@ -1,38 +1,37 @@
 
-classes
-    GAME
+
+class 1. GAME
         needs or contains
             START GAME
+            END GAME
             PLAYERS
             DETERMINE WINNER
-            DETERMINE WHOSE TURN IT IS
+            KEEPS ORDER OF TURNS
             VIRTUAL DICE
             TOTAL SCORE
         interacts with
-            PLAYER 1
+            HUMAN PLAYER
             COMPUTER PLAYER
 
-    PLAYER 1
+class 2. COMPUTER PLAYER
         needs or contains
             PER PLAYER SCORE
             PER ROUND SCORE
             POSSIBLE POINTS
-            TURN
             DICE ROLL
             CHOICE TO ROLL OR HOLD
         interacts with
             GAME
-            COMPUTER PLAYER
 
-    COMPUTER PLAYER
+class 3. HUMAN PLAYER
         needs or contains
             PER PLAYER SCORE
             PER ROUND SCORE
             POSSIBLE POINTS
-            TURN
             DICE ROLL
             CHOICE TO ROLL OR HOLD (?WHILE PER ROUND SCORE <20 AND IF PER ROUND SCORE >=20?)
-
+        interacts with
+            GAME
         
 
     
